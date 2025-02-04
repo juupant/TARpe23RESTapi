@@ -14,7 +14,7 @@ namespace RestAPIloomisejuhend.Model
         public int RecommendedTimeInSecondsBeforeExercise { get; init; }
         public int RecommendedTimeInSecondsAfterExercise { get; init; }
         public string? RestTimeInstructions { get; init; }
-        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public enum ExerciseIntensity
         {
             Low=1,
